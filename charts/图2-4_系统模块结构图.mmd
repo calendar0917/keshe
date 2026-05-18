@@ -1,0 +1,27 @@
+graph TB
+    subgraph 应用层
+        S[server.c: 命令处理/多线程管理]
+        C[client.c: 交互式Shell/命令行模式]
+    end
+
+    subgraph 传输层
+        T[transfer.c: 上传/下载/进度条]
+    end
+
+    subgraph 协议层
+        P[protocol.c: 协议序列化/反序列化/CRC32]
+    end
+
+    subgraph 工具层
+        U[utils.c: 路径校验/日志/字节序转换]
+    end
+
+    S --> T
+    C --> T
+    T --> P
+    P --> U
+
+    style 应用层 fill:#e8f5e8
+    style 传输层 fill:#fff3e0
+    style 协议层 fill:#e3f2fd
+    style 工具层 fill:#fce4ec

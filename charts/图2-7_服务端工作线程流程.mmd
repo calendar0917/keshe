@@ -1,0 +1,28 @@
+graph TB
+    A[客户端连接建立] --> B[设置socket超时30秒]
+
+    B --> C{proto_recv_msg接收请求}
+
+    C --> D{switch command}
+
+    D -->|CMD_MKDIR| E[handle_mkdir]
+    D -->|CMD_UPLOAD| F[handle_upload]
+    D -->|CMD_DOWNLOAD| G[handle_download]
+    D -->|CMD_LIST| H[handle_list]
+    D -->|CMD_DELETE| I[handle_delete]
+    D -->|CMD_RENAME| J[handle_rename]
+
+    E --> K[destroy_msg释放消息]
+    F --> K
+    G --> K
+    H --> K
+    I --> K
+    J --> K
+
+    K --> C
+
+    C -->|客户端断开| L[close关闭连接]
+
+    style A fill:#2196f3
+    style D fill:#ff9800
+    style L fill:#f44336
