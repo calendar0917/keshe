@@ -1,0 +1,102 @@
+[
+  {
+    "file": "src/server.c",
+    "arguments": [
+      "/usr/bin/gcc",
+      "-std=c11",
+      "-D_GNU_SOURCE",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-Iinclude",
+      "-g",
+      "-O0",
+      "-c",
+      "src/server.c",
+      "-o",
+      "build/debug/server.o"
+    ],
+    "directory": "/home/calendar/code/keshe",
+    "output": "build/debug/server.o"
+  },
+  {
+    "file": "src/protocol.c",
+    "arguments": [
+      "/usr/bin/gcc",
+      "-std=c11",
+      "-D_GNU_SOURCE",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-Iinclude",
+      "-g",
+      "-O0",
+      "-c",
+      "src/protocol.c",
+      "-o",
+      "build/debug/protocol.o"
+    ],
+    "directory": "/home/calendar/code/keshe",
+    "output": "build/debug/protocol.o"
+  },
+  {
+    "file": "src/transfer.c",
+    "arguments": [
+      "/usr/bin/gcc",
+      "-std=c11",
+      "-D_GNU_SOURCE",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-Iinclude",
+      "-g",
+      "-O0",
+      "-c",
+      "src/transfer.c",
+      "-o",
+      "build/debug/transfer.o"
+    ],
+    "directory": "/home/calendar/code/keshe",
+    "output": "build/debug/transfer.o"
+  },
+  {
+    "file": "src/utils.c",
+    "arguments": [
+      "/usr/bin/gcc",
+      "-std=c11",
+      "-D_GNU_SOURCE",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-Iinclude",
+      "-g",
+      "-O0",
+      "-c",
+      "src/utils.c",
+      "-o",
+      "build/debug/utils.o"
+    ],
+    "directory": "/home/calendar/code/keshe",
+    "output": "build/debug/utils.o"
+  },
+  {
+    "file": "src/client.c",
+    "arguments": [
+      "/usr/bin/gcc",
+      "-std=c11",
+      "-D_GNU_SOURCE",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-Iinclude",
+      "-g",
+      "-O0",
+      "-c",
+      "src/client.c",
+      "-o",
+      "build/debug/client.o"
+    ],
+    "directory": "/home/calendar/code/keshe",
+    "output": "build/debug/client.o"
+  }
+]
